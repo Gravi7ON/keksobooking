@@ -94,5 +94,3 @@ const getApartment = () => ({
 });
 
 const apartments = Array.from({length: AMOUNT_APARTMENTS}, getApartment);
-
-console.log(JSON.stringify(apartments));
