@@ -66,6 +66,7 @@ const getAuthor = () => {
 
 const uniqueFeature = getRandomUniquePositiveIntegerNotRange(FEATURES.length);
 const uniquePhoto = getRandomUniquePositiveIntegerNotRange(PHOTOS_ADDRESS.length);
+// eslint-disable-next-line no-unused-vars
 const getUniqueProposal = (uniqueProposals, uniqueNumber, range) => [...Array(getRandomPositiveInteger(1, range))].map((item) => item = uniqueProposals[uniqueNumber()]);
 
 const getOffer = () => ({
@@ -93,4 +94,5 @@ const getApartment = () => ({
   location: getLocation(),
 });
 
+// eslint-disable-next-line no-unused-vars
 const apartments = Array.from({length: AMOUNT_APARTMENTS}, getApartment);
