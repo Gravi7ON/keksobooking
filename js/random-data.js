@@ -27,8 +27,8 @@ const createAuthor = () => {
 
 const getuniqueFeature = getRandomUniquePositiveIntegerNotRange(FEATURES.length);
 const getuniquePhoto = getRandomUniquePositiveIntegerNotRange(PHOTOS_ADDRESS.length);
-// eslint-disable-next-line no-unused-vars
-const getUniqueProposal = (uniqueProposals, uniqueNumber, range) => [...Array(getRandomPositiveInteger(1, range))].map((item) => item = uniqueProposals[uniqueNumber()]);
+
+const getUniqueProposal = (uniqueProposals, uniqueNumber, range) => [...Array(getRandomPositiveInteger(1, range))].map((item = uniqueProposals[uniqueNumber()]) => item);
 
 const createOffer = () => ({
   title: 'Сдается в аренду',
